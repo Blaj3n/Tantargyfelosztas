@@ -20,3 +20,10 @@ for beosztas in beosztasok:
     osszes_ora += beosztas[3]
 print(f"Az iskolában a heti összóraszám: {osszes_ora}")
 
+print("4. feladat")
+tanar_nev = input("Egy tanár neve= ")
+oraszam = 0
+for beosztas in beosztasok:
+    if beosztas[0] == tanar_nev:
+        oraszam += beosztas[3]
+print(f"A tanár heti óraszáma: {oraszam}")
