@@ -27,3 +27,5 @@ for beosztas in beosztasok:
     if beosztas[0] == tanar_nev:
         oraszam += beosztas[3]
 print(f"A tanár heti óraszáma: {oraszam}")
+
+# HF: végig csinálni a 7. feladatig
