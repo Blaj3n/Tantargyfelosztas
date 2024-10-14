@@ -14,4 +14,9 @@ print("2. feladat")
 
 print(f"A fájlban {len(beosztasok)} bejegyzés van.")
 
+print("3. feladat")
+osszes_ora = 0
+for beosztas in beosztasok:
+    osszes_ora += beosztas[3]
+print(f"Az iskolában a heti összóraszám: {osszes_ora}")
 
