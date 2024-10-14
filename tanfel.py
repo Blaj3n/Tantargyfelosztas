@@ -10,3 +10,8 @@ for egysor in beolvasas:
     beosztasok.append([nev, tantargy, osztaly, heti_oraszam])
 print(beosztasok)
 
+print("2. feladat")
+
+print(f"A fájlban {len(beosztasok)} bejegyzés van.")
+
+
