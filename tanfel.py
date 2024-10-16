@@ -37,17 +37,21 @@ with open("of.txt", "w", encoding="utf-8") as fajl:
         if beosztas[1] == "osztalyfonoki":
             fajl.write(f"{beosztas[2]} - {beosztas[0]}\n")
 
-
-
 # print("6. feladat")
 # osztaly = input("Osztály= ")
 # tantargy = input("Tantárgy= ")
+#
 # for beosztas in beosztasok:
+#     szamlalo = 0
 #     if osztaly == beosztas[2] and tantargy == beosztas[1]:
+#         szamlalo += 1
+#         if szamlalo == 0:
+#             print("Osztályszinten tanulják")
+#         else:
+#             print("Csoportbontásban tanulják")
 
 print("7. feladat")
 tanarok = []
-
 for beosztas in beosztasok:
     if beosztas[0] not in tanarok:
         tanarok.append(beosztas[0])
