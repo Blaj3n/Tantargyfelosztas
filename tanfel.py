@@ -8,7 +8,7 @@ for egysor in beolvasas:
     osztaly = next(beolvasas).strip()
     heti_oraszam = int(next(beolvasas).strip())
     beosztasok.append([nev, tantargy, osztaly, heti_oraszam])
-print(beosztasok)
+# print(beosztasok)
 
 print("2. feladat")
 
@@ -21,7 +21,7 @@ for beosztas in beosztasok:
 print(f"Az iskolában a heti összóraszám: {osszes_ora}")
 
 print("4. feladat")
-tanar_nev = input("Egy tanár neve= ")
+tanar_nev = "Albatrosz Aladin"  #input("Egy tanár neve= ")
 oraszam = 0
 for beosztas in beosztasok:
     if beosztas[0] == tanar_nev:
@@ -30,7 +30,7 @@ print(f"A tanár heti óraszáma: {oraszam}")
 
 # HF: végig csinálni a 7. feladatig
 
-print("5. feladat")
+# print("5. feladat")
 
 with open("of.txt", "w", encoding="utf-8") as fajl:
     for beosztas in beosztasok:
@@ -38,9 +38,18 @@ with open("of.txt", "w", encoding="utf-8") as fajl:
             fajl.write(f"{beosztas[2]} - {beosztas[0]}\n")
 
 
-'''
-9.a - Albatrosz Aladin 
-9.b - Hangya Hanna 
-9.c - Zerge Zenina
-'''
 
+# print("6. feladat")
+# osztaly = input("Osztály= ")
+# tantargy = input("Tantárgy= ")
+# for beosztas in beosztasok:
+#     if osztaly == beosztas[2] and tantargy == beosztas[1]:
+
+print("7. feladat")
+tanarok = []
+
+for beosztas in beosztasok:
+    if beosztas[0] not in tanarok:
+        tanarok.append(beosztas[0])
+# print(tanarok)
+print(f"Az iskolában {len(tanarok)} tanár tanít.")
