@@ -29,3 +29,18 @@ for beosztas in beosztasok:
 print(f"A tanár heti óraszáma: {oraszam}")
 
 # HF: végig csinálni a 7. feladatig
+
+print("5. feladat")
+
+with open("of.txt", "w", encoding="utf-8") as fajl:
+    for beosztas in beosztasok:
+        if beosztas[1] == "osztalyfonoki":
+            fajl.write(f"{beosztas[2]} - {beosztas[0]}\n")
+
+
+'''
+9.a - Albatrosz Aladin 
+9.b - Hangya Hanna 
+9.c - Zerge Zenina
+'''
+
