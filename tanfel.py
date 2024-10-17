@@ -41,7 +41,7 @@ with open("of.txt", "w", encoding="utf-8") as fajl:
 # osztaly = input("Osztály= ")
 # tantargy = input("Tantárgy= ")
 #
-# for beosztas in beosztasok:
+# for beosztas in beosztasok:     #TRUE v FALSE
 #     szamlalo = 0
 #     if osztaly == beosztas[2] and tantargy == beosztas[1]:
 #         szamlalo += 1
